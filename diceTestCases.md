@@ -48,4 +48,9 @@
     - dice = new Dice();
     expect(dice.toString()).toBe(`'Not rolled yet'`);
 
+### Screenshots
+
+![screenshot](screenshot2.png?raw=true "test run")
+![screenshot](screenshot1.png?raw=true "run test")
+
 
