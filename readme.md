@@ -44,3 +44,8 @@ This is a Dice class for dice games. Dice holds the number of dots. The number o
 
 #### **maximumValue**
 - return the upper bound of dots. It should be 20.
+
+### Screenshots
+
+![screenshot](screenshot2.png?raw=true "test run")
+![screenshot](screenshot1.png?raw=true "run test")
