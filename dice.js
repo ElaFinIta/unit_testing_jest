@@ -22,16 +22,28 @@ module.exports = class Dice{
         return 1;
     }
 
-    get maximumValue() {  // this is a getter
+    get maximumValue() {  // this is a getter, not necessary, you can access the object directly
         return this.upperBound;
     }
 
-    get dots() {
+    get dots() { // not really necessary, you can access the object directly
         return this.dotCount;
     }
 
     roll() {
         // if it's 0 it will ceil it to 1
         this.dotCount = Math.ceil(Math.random() * this.upperBound)
+    }
+    // overwriting the class method
+    toString() {
+        // if (this.dotCount === 0) {
+        //     return 'Not rolled yet';
+        // }
+        // return `${this.dotCount}`;
+        // alternative
+        // return `${this.dots}`;
+
+        // alternative syntax
+        return this.dotCount === 0 ? 'Not rolled yet' : `${this.dotCount}`;
     }
 }

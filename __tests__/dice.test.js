@@ -120,3 +120,20 @@ describe('Test method roll', () => {
         })
     })
 });
+
+describe('Test method toString', () => {
+    let dice;
+
+    beforeEach(() => {
+        dice = new Dice();
+    });
+
+    test('dice not rolled yet', () => {
+        expect(dice.toString()).toBe('Not rolled yet');
+    });
+
+    test('dice rolled', () => {
+        dice.roll();
+        expect(dice.toString()).toBe(`${dice.dots}`);
+    });
+});
